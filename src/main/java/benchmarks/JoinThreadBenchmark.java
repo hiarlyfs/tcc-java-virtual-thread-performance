@@ -7,6 +7,7 @@ import java.util.List;
 
 @BenchmarkMode(Mode.AverageTime)
 @Fork(value = 1, warmups = 1)
+@Measurement(iterations = 30)
 public class JoinThreadBenchmark {
 
     private static final int NUMBER_OF_THREADS = 10000;

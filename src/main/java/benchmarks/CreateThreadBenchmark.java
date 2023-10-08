@@ -5,6 +5,7 @@ import org.openjdk.jmh.infra.Blackhole;
 
 @BenchmarkMode(Mode.AverageTime)
 @Fork(value = 1, warmups = 1)
+@Measurement(iterations = 30)
 public class CreateThreadBenchmark {
 
     private static final int NUMBER_OF_THREADS = 100000;
